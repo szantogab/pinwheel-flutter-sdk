@@ -1,6 +1,6 @@
 name: pinwheel
 description: A flutter plugin for the Pinwheel Link SDK.
-version: 2.3.6
+version: 2.4.0
 homepage: https://github.com/underdog-tech/pinwheel-flutter-sdk
 documentation: https://github.com/underdog-tech/pinwheel-flutter-sdk
 
@@ -11,6 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.3
   built_value: '>=8.3.3 <9.0.0'
 
 dev_dependencies:
@@ -27,3 +30,6 @@ flutter:
         pluginClass: PinwheelPlugin
       ios:
         pluginClass: PinwheelPlugin
+      web:
+        pluginClass: PinwheelWeb
+        fileName: pinwheel_web.dart
